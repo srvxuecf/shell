@@ -1,5 +1,5 @@
-##authz�����ļ��޸�
 
-sed -i '/^$/d' authz
-sed -i 's/^\[/\n&/g' authz
-awk -vRS="" '!/^\[gs-/' authz
+
+sed -i '/^$/d' authz   ##删除空行
+sed -i 's/^\[/\n&/g' authz   ##每个 [ 前面添加空行
+awk -vRS="" '!/^\[gs-/' authz  ## 修改 RS,打印 非 [gs- 开头的权限配置
