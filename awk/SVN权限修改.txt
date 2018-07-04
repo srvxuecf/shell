@@ -1,0 +1,5 @@
+##authzÅäÖÃÎÄ¼şĞŞ¸Ä
+
+sed -i '/^$/d' authz
+sed -i 's/^\[/\n&/g' authz
+awk -vRS="" '!/^\[gs-/' authz
